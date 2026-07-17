@@ -518,13 +518,13 @@ footer.site-footer {
 
     <div class="form-success" id="form-success">Merci ! Votre message a bien été envoyé.</div>
 
-    <form id="contact-form" class="form-panel" style="margin-top:8px;">
+    <form id="contact-form" class="form-panel" style="margin-top:8px;" data-formspree="https://formspree.io/f/mrenpkzy">
       <div class="form-row">
-        <div class="field"><label>Nom complet</label><input type="text" name="nom" placeholder="Votre nom"></div>
-        <div class="field"><label>Adresse e-mail</label><input type="email" name="email" placeholder="vous@exemple.com"></div>
+        <div class="field"><label>Nom complet <span class="req">*</span></label><input type="text" name="nom" placeholder="Votre nom" required></div>
+        <div class="field"><label>Adresse e-mail <span class="req">*</span></label><input type="email" name="email" placeholder="vous@exemple.com" required></div>
       </div>
       <div class="form-row single">
-        <div class="field"><label>Votre message</label><textarea name="message" placeholder="Décrivez votre projet, vos besoins ou votre univers…" style="min-height:120px;"></textarea></div>
+        <div class="field"><label>Votre message <span class="req">*</span></label><textarea name="message" placeholder="Décrivez votre projet, vos besoins ou votre univers…" style="min-height:120px;" required></textarea></div>
       </div>
       <button type="submit" class="btn btn-primary btn-block">Envoyer le message ➤</button>
     </form>
